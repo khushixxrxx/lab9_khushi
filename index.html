@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Jurassic Park Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<div id="welcome-section">
+    <div class="welcome-content">
+        <h1>Welcome to the Photo Gallery of Jurassic Park</h1>
+        <button id="start-btn">Let's Get Started</button>
+    </div>
+</div>
+
+<div id="gallery-section" style="display: none;">
+    <header>
+        <h1>Jurassic Park Photo Gallery</h1>
+        <div id="filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="dinosaurs">Dinosaurs</button>
+            <button class="filter-btn" data-category="landscapes">Landscapes</button>
+            <button class="filter-btn" data-category="vehicles">Vehicles</button>
+            <button class="filter-btn" data-category="visitors">Visitors</button>
+        </div>
+    </header>
+
+    <section id="gallery">
+        <!-- Images will be dynamically loaded here -->
+    </section>
+
+    <div id="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Enlarged Image">
+    </div>
+</div>
+
+</body>
+</html>
